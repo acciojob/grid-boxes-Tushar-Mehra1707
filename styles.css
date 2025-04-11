@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.item {
+    background-color: lightblue; 
+    padding: 20px; 
+    text-align: center; 
+    border: 1px solid #000;
+    font-size: 24px; 
+}
+
+.item1 {
+    grid-column: span 2; 
+    grid-row: span 2; 
+}
+
+.item2 {
+    grid-column: span 1; 
+    grid-row: span 2; 
+}
+
+.item3 {
+    grid-column: span 1; 
+    grid-row: span 2;
+}
